@@ -29,10 +29,16 @@ struct SettingsKeys {
 
 enum HostFileNames: String {
     case adaway
+    case blackHosts
+    case malwareHosts
+    case camelon
     case zeus
-    case tracker	
+    case tracker
+    case simpleAds
+    case adServerHosts
+    case ultimateAdBlock
     
-    static let allValues: [HostFileNames] = [.adaway, .zeus, .tracker]
+    static let allValues: [HostFileNames] = [.adaway, .blackHosts, .malwareHosts, .camelon, .zeus, .tracker, .simpleAds, .adServerHosts, .ultimateAdBlock]
 }
 
 let isiPadUI = UI_USER_INTERFACE_IDIOM() == .pad

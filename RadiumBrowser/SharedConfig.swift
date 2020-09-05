@@ -12,7 +12,7 @@ import BSColorUtils
 
 struct Colors {
     static let radiumGray = UIColor.with(hex: "#EFEFEF")
-    static let radiumDarkGray = UIColor.with(hex: "#AFB4B4")
+    static let radiumDarkGray = UIColor.with(hex: "#FFFFFF")
     static let radiumUnselected = UIColor.with(hex: "#C8C8C8")
     static let urlGreen = UIColor.with(hex: "#046D23")
 }
@@ -28,17 +28,9 @@ struct SettingsKeys {
 }
 
 enum HostFileNames: String {
-    case adaway
-    case blackHosts
-    case malwareHosts
     case camelon
-    case zeus
-    case tracker
-    case simpleAds
-    case adServerHosts
-    case ultimateAdBlock
     
-    static let allValues: [HostFileNames] = [.adaway, .blackHosts, .malwareHosts, .camelon, .zeus, .tracker, .simpleAds, .adServerHosts, .ultimateAdBlock]
+    static let allValues: [HostFileNames] = [.camelon]
 }
 
 let isiPadUI = UI_USER_INTERFACE_IDIOM() == .pad

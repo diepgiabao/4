@@ -28,9 +28,11 @@ struct SettingsKeys {
 }
 
 enum HostFileNames: String {
-    case camelon
+    case adaway
+    case zeus
+    case tracker	
     
-    static let allValues: [HostFileNames] = [.camelon]
+    static let allValues: [HostFileNames] = [.adaway, .zeus, .tracker]
 }
 
 let isiPadUI = UI_USER_INTERFACE_IDIOM() == .pad

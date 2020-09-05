@@ -63,26 +63,6 @@ class SettingsTableViewController: UITableViewController {
     
     lazy var currentSearchUrl = UserDefaults.standard.string(forKey: SettingsKeys.searchEngineUrl)
     
-    lazy var bulletinManager: BLTNItemManager = {
-        let rootItem = BLTNPageItem(title: "Ad Blocking")
-        if !isiPhone5 {
-            rootItem.image = #imageLiteral(resourceName: "NoAds")
-        }
-        
-        rootItem.descriptionText = """
-        Thank you for using Onbibi Browser
-        """
-        rootItem.actionButtonTitle = "Purchase"
-        rootItem.actionHandler = { _ in
-            self.makePurchase()
-        }
-        rootItem.alternativeHandler = { item in
-            item.manager?.dismissBulletin()
-        }
-        rootItem.alternativeButtonTitle = "Not now"
-        return BLTNItemManager(rootItem: rootItem)
-    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

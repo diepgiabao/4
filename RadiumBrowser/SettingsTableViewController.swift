@@ -33,16 +33,6 @@ enum SearchEngineTitles: String {
     }
 }
 
-enum AdBlockingTitles: String {
-    case purchaseAdBlock = "Turn on adblocker"
-    case restorePurchases = "Turn off adblocker"
-    
-    case enableAdBlock = "Enable Ad Block"
-    
-    static let unpurchasedValues: [AdBlockingTitles] = [.purchaseAdBlock, .restorePurchases]
-    static let purchasedValues: [AdBlockingTitles] = [.enableAdBlock]
-}
-
 enum DeleteSectionTitles: String {
     case clearHistory = "Clear History"
     case clearCookies = "Clear Local Storage"
@@ -82,7 +72,7 @@ class SettingsTableViewController: UITableViewController {
     }
     
     func adBlockPurchased() -> Bool {
-        return KeychainWrapper.standard.bool(forKey: SettingsKeys.adBlockPurchased) ?? false
+        return KeychainWrapper.standard.bool(forKey: SettingsKeys.adBlockPurchased) ?? true
     }
 
     // MARK: - Table view data source
@@ -290,90 +280,13 @@ class SettingsTableViewController: UITableViewController {
     // MARK: - Links Section
     
     func didSelectLinkSection(withRowIndex rowIndex: Int) {
-        var urlString = "https://github.com/SlayterDev/RadiumBrowser"
+        var urlString = "https://onbibi.com"
         
         if LinksTitles.allValues[rowIndex] == .supportPage {
-            urlString += "/issues"
+            urlString += "/page/private-policy"
         }
         
         let request = URLRequest(url: URL(string: urlString)!)
         TabContainerView.currentInstance?.addNewTab(withRequest: request)
         self.dismiss(animated: true, completion: nil)
     }
-    
-    // MARK: - In App Purchase Section
-    
-    func didSelectAdBlock(withRowIndex rowIndex: Int) {
-        if AdBlockingTitles.unpurchasedValues[rowIndex] == .purchaseAdBlock {
-            purchaseAdBlock()
-        } else {
-            restorePurchases()
-        }
-    }
-    
-    func makePurchase() {
-        bulletinManager.displayActivityIndicator()
-        SwiftyStoreKit.purchaseProduct("com.slayterdevelopment.radium.adblocking") { [weak self] result in
-            self?.bulletinManager.dismissBulletin()
-            switch result {
-            case .success(let purchase):
-                
-                print("Successfully purchased: \(purchase.productId)")
-                KeychainWrapper.standard.set(true, forKey: SettingsKeys.adBlockPurchased)
-                UserDefaults.standard.set(true, forKey: SettingsKeys.adBlockEnabled)
-                NotificationCenter.default.post(name: NSNotification.Name.adBlockSettingsChanged, object: nil)
-                
-                let av = UIAlertController(title: "Ad Block Purchased!", message: nil, preferredStyle: .alert)
-                av.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
-                
-                DispatchQueue.main.async {
-                    self?.present(av, animated: true, completion: nil)
-                    self?.tableView.reloadData()
-                }
-            case .error(let error):
-                print("Error purchasing: \(error.localizedDescription)")
-            }
-        }
-    }
-    
-    func purchaseAdBlock() {
-        bulletinManager.showBulletin(above: self)
-    }
-    
-    func restorePurchases() {
-        let spinner = UIActivityIndicatorView(style: .whiteLarge)
-        spinner.center = self.view.center
-        spinner.hidesWhenStopped = true
-        spinner.color = .gray
-        self.tableView.addSubview(spinner)
-        spinner.startAnimating()
-        
-        SwiftyStoreKit.restorePurchases() { [weak self] results in
-            spinner.stopAnimating()
-            spinner.removeFromSuperview()
-            
-            if results.restoreFailedPurchases.count > 0 {
-                let av = UIAlertController(title: "Restore Failed", message: "Something went wrong restroing purchases. Please try again later.", preferredStyle: .alert)
-                av.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
-                self?.present(av, animated: true, completion: nil)
-            } else if results.restoredPurchases.count > 0 {
-                KeychainWrapper.standard.set(true, forKey: SettingsKeys.adBlockPurchased)
-                UserDefaults.standard.set(true, forKey: SettingsKeys.adBlockEnabled)
-                NotificationCenter.default.post(name: NSNotification.Name.adBlockSettingsChanged, object: nil)
-                
-                let av = UIAlertController(title: "Purchases Restored!", message: nil, preferredStyle: .alert)
-                av.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
-                self?.present(av, animated: true, completion: nil)
-                
-                DispatchQueue.main.async {
-                    self?.tableView.reloadData()
-                }
-            } else {
-                let av = UIAlertController(title: "Nothing to Restore", message: nil, preferredStyle: .alert)
-                av.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
-                self?.present(av, animated: true, completion: nil)
-            }
-        }
-    }
-
-}

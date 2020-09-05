@@ -70,10 +70,6 @@ class SettingsTableViewController: UITableViewController {
     @objc func done() {
         self.dismiss(animated: true, completion: nil)
     }
-    
-    func adBlockPurchased() -> Bool {
-        return KeychainWrapper.standard.bool(forKey: SettingsKeys.adBlockPurchased) ?? true
-    }
 
     // MARK: - Table view data source
 
@@ -87,10 +83,6 @@ class SettingsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var counts = [OptionsTitles.allValues.count, SearchEngineTitles.allValues.count, DeleteSectionTitles.allValues.count, LinksTitles.allValues.count]
-        if #available(iOS 11.0, *) {
-            counts.insert((adBlockPurchased()) ? AdBlockingTitles.purchasedValues.count : AdBlockingTitles.unpurchasedValues.count, at: 2)
-        }
-        
         return counts[section]
     }
     
@@ -147,29 +139,11 @@ class SettingsTableViewController: UITableViewController {
                 cell.accessoryType = .none
             }
         case 2:
-            if adBlockPurchased() {
-                let option = AdBlockingTitles.purchasedValues[indexPath.row]
-                cell.textLabel?.text = option.rawValue
-                cell.selectionStyle = .none
-                cell.textLabel?.textAlignment = .left
-                
-                if option == .enableAdBlock {
-                    cell.accessoryView = UISwitch().then {
-                        $0.isOn = UserDefaults.standard.bool(forKey: SettingsKeys.adBlockEnabled)
-                        $0.addTarget(self, action: #selector(adBlockEnabledChanged(sender:)), for: .valueChanged)
-                    }
-                }
-            } else {
-                cell.textLabel?.text = AdBlockingTitles.unpurchasedValues[indexPath.row].rawValue
-                cell.selectionStyle = .default
-                cell.textLabel?.textAlignment = .center
-            }
-        case 3:
             cell.selectionStyle = .default
             cell.textLabel?.textColor = .red
             cell.textLabel?.textAlignment = .center
             cell.textLabel?.text = DeleteSectionTitles.allValues[indexPath.row].rawValue
-        case 4:
+        case 3:
             cell.selectionStyle = .none
             cell.textLabel?.textAlignment = .center
             cell.textLabel?.text = LinksTitles.allValues[indexPath.row].rawValue
@@ -194,12 +168,8 @@ class SettingsTableViewController: UITableViewController {
         case 1:
             didSelectSearchEngine(withRowIndex: indexPath.row)
         case 2:
-            if !adBlockPurchased() {
-                didSelectAdBlock(withRowIndex: indexPath.row)
-            }
-        case 3:
             didSelectClearSection(withRowIndex: indexPath.row)
-        case 4:
+        case 3:
             didSelectLinkSection(withRowIndex: indexPath.row)
         default:
             break
@@ -263,11 +233,6 @@ class SettingsTableViewController: UITableViewController {
         UserDefaults.standard.set(sender.isOn, forKey: SettingsKeys.trackHistory)
     }
     
-    @objc func adBlockEnabledChanged(sender: UISwitch) {
-        UserDefaults.standard.set(sender.isOn, forKey: SettingsKeys.adBlockEnabled)
-        NotificationCenter.default.post(name: NSNotification.Name.adBlockSettingsChanged, object: nil)
-    }
-    
     // MARK: - Search Section
     
     func didSelectSearchEngine(withRowIndex rowIndex: Int) {
@@ -290,3 +255,4 @@ class SettingsTableViewController: UITableViewController {
         TabContainerView.currentInstance?.addNewTab(withRequest: request)
         self.dismiss(animated: true, completion: nil)
     }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "action" : {
+      "type" : "block"
+    },
+    "trigger" : {
+      "load-type" : [
+        "third-party"
+      ],
+      "url-filter" : "^https?:\/+([^\/:]+\\.)?sex.com[:\/]"
+    }
+  }

@@ -1,0 +1,1 @@
+[{"trigger":{"url-filter":".*","if-domain":["9gag.com/nsfw","reddit.com/r/nsfw","/nsfw"]},"action":{"type":"block"}}]

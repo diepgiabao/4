@@ -21,13 +21,13 @@ enum OptionsTitles: String {
 }
 
 enum SearchEngineTitles: String {
-    case onbibi = "Onbibi.com Search"
+    case google = "Onbibi.com Search"
     
-    static let allValues: [SearchEngineTitles] = [.onbibi]
+    static let allValues: [SearchEngineTitles] = [.google]
     
     static func getUrl(title: SearchEngineTitles) -> String {
         switch title {
-        case .onbibi:
+        case .google:
             return "https://onbibi.com/search?q="
         }
     }

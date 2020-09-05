@@ -21,7 +21,7 @@ enum OptionsTitles: String {
 }
 
 enum SearchEngineTitles: String {
-    case google = "Onbibi.com Search"
+    case google = "Onbibi.com Search Engine"
     
     static let allValues: [SearchEngineTitles] = [.google]
     

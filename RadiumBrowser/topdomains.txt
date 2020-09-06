@@ -442,6 +442,7 @@ pch
 pcmag
 people
 photobucket
+photoshop
 pinterest
 pixel
 pizza
@@ -598,6 +599,8 @@ usps
 vanguard
 vans
 verizon
+banner
+image
 verizon wireless
 vice
 video
@@ -612,6 +615,7 @@ washing machines
 washington post
 watch
 wayfair
+wallpaper
 weather
 webex
 webmd

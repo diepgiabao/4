@@ -4,18 +4,21 @@ onbibi.com/m
 onbibi search engine
 phim
 6pm
+search engine onbibi
+onbibi.com
 aa
 aarp
 abc
 abcnews
 about
-abs-cbnnews
+abs cbnnews
 accuweather
 adidas
 adobe
 adp
 ae
-air-conditioner
+diep gia bao
+air conditioner
 airbnb
 airpods
 alibaba
@@ -23,13 +26,13 @@ aliexpress
 allrecipes
 amazon
 amazon uk
-amazon-prime
+amazon prime
 amazonprime
 america
-americanexpress
+american express
 ancestry
 android
-androidcentral
+android central
 answers
 antivirus
 aol
@@ -52,32 +55,33 @@ b&q
 babycenter
 backpage
 banking
-bankofamerica
+bank of america
 bankrate
-barclaycardus
-barnesandnoble
 battle
 bbc
 bbc weather
-bedbathandbeyond
-best-buy
+bed bathand beyond
+best buy
 bestbuy
 bhphotovideo
-biblegateway
+bible gate way
 bizjournals
 blackboard
-bleacherreport
+bleacher report
 blogger
 blogspot
 bloomberg
-bodybuilding
+body building
 booking
 boots
+browser
+chrome
+onbibi browser
 box
 breitbart
 brexit
-building-materials
-businessinsider
+building materials
+business insider
 buzzfeed
 buzzlie
 ca
@@ -85,25 +89,25 @@ cabelas
 cafemom
 calculator
 candy
-capitalone
-capitalone360
+capital one
+capital one 360
 car
-careerbuilder
+career builder
 cars
 cartoon
 cbs
-cbslocal
-cbsnews
-cbssports
+cbs local
+cbs news
+cbs sports
 chase
-chicagotribune
+chicago tribune
 chron
 citi
-citibankonline
+citibank online
 classroom
 cleaner
 clima
-climatechange
+climate change
 clip
 cnbc
 cnet
@@ -111,9 +115,8 @@ cnn
 college
 comcast
 comenity
-conormcgregor
-conservativetribune
-consumerreports
+conor mcgregor
+consumer reports
 corona
 coronavirus
 costco
@@ -121,7 +124,7 @@ coupons
 cox
 cracked
 craigslist
-creditkarma
+credit karma
 cricbuzz
 currency
 currys
@@ -139,33 +142,33 @@ delta
 desk
 developer
 deviantart
-dickssportinggoods
-digitaltrends
-dior-sauvage
+sporting goods
+digital trends
+dior sauvage
 diply
 directv
 discover
 discovercard
 disney
 dominos
-donaldtrump
+donald trump
 doraemon
 douban
-draftkings
+draft kings
 dresses
 dropbox
 drudgereport
 drugs
-earthlink
+earth link
 ebates
 ebay
 ebay uk
-ebay-uk
+ebay uk
 ecollege
 edmunds
 edu
 education
-ee-login
+ee login
 ehow
 electronic
 elephant
@@ -176,7 +179,7 @@ epicurious
 espn
 etsy
 euro
-euro-soccer
+euro soccer
 europe
 eventbrite
 evernote
@@ -186,7 +189,7 @@ express
 expedia
 experia
 facebook
-facebook-login
+facebook login
 faithtap
 fallout
 fandango
@@ -199,10 +202,10 @@ federal
 fedex
 feedly
 fidelity
-fidget-spinner
+fidget spinner
 film
 fitbit
-fitbit-charge-2
+fitbit charge 2
 flashscore
 flickr
 food
@@ -240,22 +243,25 @@ gofundme
 goodhousekeeping
 goodreads
 google
+university of people
+uop
+free online university
 goverment
 greatergood
 groupon
 gucci
-gucci-shoes
+gucci shoes
 gunny
 gym
 hacker
 hacking
-harbor-freight
+harbor freight
 harvard
 healthcare
 hilton
 hm
-home-depot
-home-mini
+home depot
+home mini
 homedepot
 hootsuite
 hot
@@ -289,12 +295,12 @@ io9
 ios
 ipad
 iphone
-iphone-6
-iphone-6s
-iphone-7
-iphone-8
-iphone-x
-iphone-xr
+iphone 6
+iphone 6s
+iphone 7
+iphone 8
+iphone x
+iphone xr
 irs
 jalopnik
 jamebond
@@ -303,7 +309,7 @@ jcrew
 jd
 jet
 jezebel
-john-lewis
+john lewis
 jordans
 kahoot
 kaspersky
@@ -311,7 +317,7 @@ kayak
 kbb
 kickstarter
 kinja
-kitchen-appliances
+kitchen appliances
 kmart
 kohls
 kotaku
@@ -345,23 +351,23 @@ makeup
 mapquest
 maps
 market
-marketwatch
+market watch
 marriott
-marthastewart
 mashable
 match
-mayoclinic
+clinic
 medium
+playstore
 meetup
 menards
-merriam-webster
+merriam webster
 meteo
 mic
 michaels
-michealjackson
+micheal jackson
 microsoft
-microsoftonline
-microsoftstore
+microsoft online
+microsoft store
 minigame
 mint
 mit
@@ -377,16 +383,16 @@ mp4
 msn
 msnbc
 music
-myfitnesspal
+my fitness pal
 myway
-nametests
+name tests
 naruto
-nationalgeographic
+national geographic
 naver
 nba
 nbc
-nbcnews
-nbcsports
+nbc news
+nbc sports
 nesn
 netflix
 newegg
@@ -398,22 +404,22 @@ nfl
 nhl
 nih
 nike
-nike-air-force-1
-nike-shoes
-nintendo-switch
+nike air force 1
+nike shoes
+nintendo switch
 nintendoswitch
 noaa
 nordstrom
 norton
 note9
 notepad
-now-tv
+now tv
 npr
 nydailynews
 nypost
 nytimes
 office
-office-365
+office 365
 office365
 officedepot
 okcupid
@@ -450,7 +456,7 @@ pool
 popsugar
 potterybarn
 president
-pretty-little-thing
+pretty little thing
 priceline
 primewire
 prodigy
@@ -462,7 +468,7 @@ quizlet
 quora
 qvc
 ravelry
-realsimple
+real simple
 realtor
 redbox
 reddit
@@ -476,10 +482,10 @@ restaurant
 retailmenot
 reuters
 roblox
-rollingstone
+rolling stone
 rotoworld
-rottentomatoes
-salesforce
+rotten tomatoes
+sales force
 salon
 samsclub
 samsung
@@ -519,21 +525,21 @@ speedtest
 sport
 spotify
 sprint
-squarespace
+square space
 stackexchange
 stackoverflow
 stanford
 staples
 starbucks
-steamcommunity
-steampowered
+steam community
+steam powered
 stock
 stream
 stubhub
 study
 supreme
-supreme-hoodie
-surveymonkey
+supreme hoodie
+survey monkey
 swagbucks
 tablet
 target
@@ -543,29 +549,29 @@ technology
 telegraph
 terraclicks
 tesco
-theatlantic
-theblackfriday
-theblaze
-thedailybeast
-thefreedictionary
-theguardian
-thekitchn
-theonion
-thesaurus
-theverge
+the atlantic
+the blackfriday
+the blaze
+the daily beast
+the free dictionary
+the guardian
+the kitchn
+the onion
+the saurus
+the verge
 thinkgeek
 ticketmaster
 tickld
 tigerdirect
 time
-timeanddate
-timewarnercable
+time and date
+time warner cable
 tmz
 today
 tomshardware
 topix
 toysrus
-tractor-supply
+tractor supply
 traductor
 translate
 trending
@@ -578,23 +584,22 @@ twitch
 twitter
 ulta
 united
-universalcredit
+universal credit
 university
 ups
-urbandictionary
-urbanoutfitters
+urban dictionary
+urban outfitters
 usaa
-usatoday
-usbank
-usmagazine
+usa today
+us bank
+us magazine
 usnews
 usps
 vanguard
 vans
 verizon
-verizonwireless
+verizon wireless
 vice
-victoriassecret
 video
 vimeo
 vistaprint
@@ -602,9 +607,9 @@ vox
 vrbo
 walgreens
 walmart
-walmart-near-me
-washing-machines
-washingtonpost
+walmart near me
+washing machines
+washington post
 watch
 wayfair
 weather
@@ -627,23 +632,23 @@ wix
 wnd
 woot
 wordpress
-worldlifestyle
-worldwide
+world life style
+world wide
 wow
 wsj
-wunderground
+w underground
 www
 xbox
-xbox-one
-xbox-one-s
-xbox-one-x
+xbox one
+xbox one s
+xbox one x
 xfinity
 yahoo
 yeezy
-yellowpages
+yellow pages
 yelp
 you
-yourdailydish
+your daily dish
 youtube
 zappos
 zazzle
@@ -651,3 +656,14 @@ zendesk
 zergnet
 zillow
 zulily
+phim hay
+phim moi
+phim thanh long
+phim tai lieu
+mua ban
+tai lieu mon
+diem thi
+tra cuu
+nguoi noi tieng
+tac dung
+viec lam

@@ -3,16 +3,11 @@
 //  RadiumBrowser
 //
 //  Created by Bradley Slayter on 11/2/17.
-//  Copyright © 2017 bslayter. All rights reserved.
+//  Copyright Â© 2017 bslayter. All rights reserved.
 //
 
 import UIKit
 import RealmSwift
-import SwiftyStoreKit
-import BLTNBoard
-import SwiftKeychainWrapper
-import WebKit
-
 
 enum OptionsTitles: String {
     case trackHistory = "Track History"
@@ -20,29 +15,16 @@ enum OptionsTitles: String {
     static let allValues: [OptionsTitles] = [.trackHistory]
 }
 
-enum SearchEngineTitles: String {
-    case google = "Onbibi.com Search Engine"
-    
-    static let allValues: [SearchEngineTitles] = [.google]
-    
-    static func getUrl(title: SearchEngineTitles) -> String {
-        switch title {
-        case .google:
-            return "https://onbibi.com/search?q="
-        }
-    }
-}
-
 enum DeleteSectionTitles: String {
     case clearHistory = "Clear History"
-    case clearCookies = "Clear Local Storage"
+    case clearCookies = "Clear Cookies"
     
     static let allValues: [DeleteSectionTitles] = [.clearHistory, .clearCookies]
 }
 
 enum LinksTitles: String {
-    case supportPage = "Term & Private Privacy"
-    case codeRepository = "Homepage"
+    case supportPage = "Homepage"
+    case codeRepository = "Terms & Private Policy"
     
     static let allValues: [LinksTitles] = [.supportPage, .codeRepository]
 }
@@ -50,8 +32,6 @@ enum LinksTitles: String {
 class SettingsTableViewController: UITableViewController {
     
     static let identifier = "SettingsIdentifier"
-    
-    lazy var currentSearchUrl = UserDefaults.standard.string(forKey: SettingsKeys.searchEngineUrl)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,49 +54,26 @@ class SettingsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        if #available(iOS 11.0, *) {
-            return 5
-        } else {
-            return 4
-        }
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var counts = [OptionsTitles.allValues.count, SearchEngineTitles.allValues.count, DeleteSectionTitles.allValues.count, LinksTitles.allValues.count]
-        return counts[section]
-    }
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 1 {
-            return "Search Engine"
+        switch section {
+        case 0:
+            return OptionsTitles.allValues.count
+        case 1:
+            return DeleteSectionTitles.allValues.count
+        case 2:
+            return LinksTitles.allValues.count
+        default:
+            return 0
         }
-        
-        return ""
-    }
-    
-    override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        if #available(iOS 11.0, *) {
-            return nil
-        } else if section == 3 {
-            return "Upgrade to iOS 11 to have the option to block ads on pages you visit!"
-        }
-        
-        return nil
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SettingsTableViewController.identifier, for: indexPath)
         
-        cell.textLabel?.textColor = .black
-        
-        var section = indexPath.section
-        if #available(iOS 11.0, *) {
-            // do nothing
-        } else if section > 1 {
-            section += 1
-        }
-        
-        switch section {
+        switch indexPath.section {
         case 0:
             let option = OptionsTitles.allValues[indexPath.row]
             cell.textLabel?.text = option.rawValue
@@ -130,20 +87,10 @@ class SettingsTableViewController: UITableViewController {
             }
         case 1:
             cell.selectionStyle = .default
-            let engineTitle = SearchEngineTitles.allValues[indexPath.row]
-            cell.textLabel?.text = engineTitle.rawValue
-            
-            if SearchEngineTitles.getUrl(title: engineTitle) == currentSearchUrl {
-                cell.accessoryType = .checkmark
-            } else {
-                cell.accessoryType = .none
-            }
-        case 2:
-            cell.selectionStyle = .default
             cell.textLabel?.textColor = .red
             cell.textLabel?.textAlignment = .center
             cell.textLabel?.text = DeleteSectionTitles.allValues[indexPath.row].rawValue
-        case 3:
+        case 2:
             cell.selectionStyle = .none
             cell.textLabel?.textAlignment = .center
             cell.textLabel?.text = LinksTitles.allValues[indexPath.row].rawValue
@@ -157,19 +104,10 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        var section = indexPath.section
-        if #available(iOS 11.0, *) {
-            // do nothing
-        } else if section > 1 {
-            section += 1
-        }
-        
-        switch section {
+        switch indexPath.section {
         case 1:
-            didSelectSearchEngine(withRowIndex: indexPath.row)
-        case 2:
             didSelectClearSection(withRowIndex: indexPath.row)
-        case 3:
+        case 2:
             didSelectLinkSection(withRowIndex: indexPath.row)
         default:
             break
@@ -212,13 +150,12 @@ class SettingsTableViewController: UITableViewController {
     
     func clearCookies() {
         func doTheClear() {
-            let webDataTypes = Set(arrayLiteral: WKWebsiteDataTypeDiskCache, WKWebsiteDataTypeOfflineWebApplicationCache, WKWebsiteDataTypeMemoryCache,
-                                                  WKWebsiteDataTypeLocalStorage, WKWebsiteDataTypeCookies, WKWebsiteDataTypeSessionStorage,
-                                                  WKWebsiteDataTypeIndexedDBDatabases, WKWebsiteDataTypeWebSQLDatabases)
-            WKWebsiteDataStore.default().removeData(ofTypes: webDataTypes, modifiedSince: Date(timeIntervalSince1970: 0), completionHandler: {})
+            if let cookies = HTTPCookieStorage.shared.cookies {
+                cookies.forEach { HTTPCookieStorage.shared.deleteCookie($0) }
+            }
         }
         
-        let av = UIAlertController(title: "Clear Local Data", message: "Are you sure you want to clear your cookies?", preferredStyle: .alert)
+        let av = UIAlertController(title: "Clear Cookies", message: "Are you sure you want to clear your cookies?", preferredStyle: .alert)
         av.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: { _ in
             doTheClear()
         }))
@@ -231,15 +168,6 @@ class SettingsTableViewController: UITableViewController {
     
     @objc func trackHistoryChanged(sender: UISwitch) {
         UserDefaults.standard.set(sender.isOn, forKey: SettingsKeys.trackHistory)
-    }
-    
-    // MARK: - Search Section
-    
-    func didSelectSearchEngine(withRowIndex rowIndex: Int) {
-        let searchUrl = SearchEngineTitles.getUrl(title: SearchEngineTitles.allValues[rowIndex])
-        UserDefaults.standard.set(searchUrl, forKey: SettingsKeys.searchEngineUrl)
-        currentSearchUrl = searchUrl
-        tableView.reloadData()
     }
     
     // MARK: - Links Section
@@ -255,4 +183,5 @@ class SettingsTableViewController: UITableViewController {
         TabContainerView.currentInstance?.addNewTab(withRequest: request)
         self.dismiss(animated: true, completion: nil)
     }
+
 }

@@ -43,7 +43,7 @@ class TabContainerView: UIView, TabViewDelegate {
     override init(frame: CGRect) {
         super.init(frame: frame)
 		
-        self.backgroundColor = .black
+        self.backgroundColor = Colors.radiumDarkGray
 		
 		addTabButton = UIButton().then { [unowned self] in
 			$0.setImage(UIImage.imageFrom(systemItem: .add), for: .normal)

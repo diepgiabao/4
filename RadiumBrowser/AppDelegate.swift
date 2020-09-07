@@ -28,18 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 			NSLog("Document Path: %@", documentsPath)
 		#endif
         
-        SwiftyStoreKit.completeTransactions(atomically: true) { purchases in
-            for purchase in purchases {
-                if purchase.transaction.transactionState == .purchased || purchase.transaction.transactionState == .restored {
-                    if purchase.needsFinishTransaction {
-                        KeychainWrapper.standard.set(true, forKey: SettingsKeys.adBlockPurchased)
-                        SwiftyStoreKit.finishTransaction(purchase.transaction)
-                    }
-                    print("purchased: \(purchase)")
-                }
-            }
-        }
-        
         MigrationManager.shared.attemptMigration()
 		
         WebServer.shared.startServer()

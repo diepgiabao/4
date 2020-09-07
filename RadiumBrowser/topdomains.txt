@@ -1,6 +1,11 @@
 123movies
 247sports
 onbibi.com/m
+ai
+solar
+blockchain
+Artificial intelligence AI
+Big data
 onbibi search engine
 phim
 6pm
@@ -26,6 +31,7 @@ aliexpress
 allrecipes
 amazon
 amazon uk
+hacker
 amazon prime
 amazonprime
 america
@@ -37,6 +43,7 @@ answers
 antivirus
 aol
 apple
+quora
 winzip
 winrar
 archive
@@ -52,13 +59,18 @@ avg
 avira
 azlyrics
 b&q
+web developer
+app developer
 babycenter
 backpage
 banking
 bank of america
 bankrate
 battle
+new york
+california
 bbc
+appstore
 bbc weather
 bed bathand beyond
 best buy

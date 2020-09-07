@@ -44,9 +44,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #if DEBUG
 //            KeychainWrapper.standard.set(false, forKey: SettingsKeys.adBlockPurchased)
         #endif
-        defaults.set(false, forKey: SettingsKeys.stringLiteralAdBlock)
+        defaults.set(true, forKey: SettingsKeys.stringLiteralAdBlock)
         for hostFile in HostFileNames.allValues {
-            defaults.set(false, forKey: hostFile.rawValue)
+            defaults.set(true, forKey: hostFile.rawValue)
         }
         
         mainController = MainViewController()

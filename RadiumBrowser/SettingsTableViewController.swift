@@ -23,8 +23,8 @@ enum DeleteSectionTitles: String {
 }
 
 enum LinksTitles: String {
-    case supportPage = "Homepage"
-    case codeRepository = "Terms & Private Policy"
+    case supportPage = "Terms & Private Policy"
+    case codeRepository = "Onbibi Search Engine"
     
     static let allValues: [LinksTitles] = [.supportPage, .codeRepository]
 }

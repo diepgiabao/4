@@ -72,7 +72,7 @@ class AddressBar: UIView, UITextFieldDelegate {
 		}
 		
         addressField = SharedTextField().then { [unowned self] in
-            $0.placeholder = "Search or type URL..."
+            $0.placeholder = "Search or enter address"
             $0.backgroundColor = Colors.radiumUnselected
             $0.layer.borderColor = UIColor.lightGray.cgColor
             $0.layer.borderWidth = 0.5

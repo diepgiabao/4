@@ -72,11 +72,11 @@ class AddressBar: UIView, UITextFieldDelegate {
 		}
 		
         addressField = SharedTextField().then { [unowned self] in
-            $0.placeholder = "Search the web..."
-            $0.backgroundColor = .lightGray
+            $0.placeholder = "Search or type URL..."
+            $0.backgroundColor = Colors.radiumUnselected
             $0.layer.borderColor = UIColor.lightGray.cgColor
             $0.layer.borderWidth = 0.5
-            $0.layer.cornerRadius = 4
+            $0.layer.cornerRadius = 10
             $0.inset = 8
             
             $0.autocorrectionType = .no

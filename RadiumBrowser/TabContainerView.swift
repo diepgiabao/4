@@ -46,7 +46,7 @@ class TabContainerView: UIView, TabViewDelegate {
         self.backgroundColor = Colors.radiumDarkGray
 		
 		addTabButton = UIButton().then { [unowned self] in
-			$0.setImage(UIImage.imageFrom(systemItem: .add), for: .normal)
+			$0.setImage(UIImage(named: "add"), for: .normal)
 			
 			self.addSubview($0)
 			$0.snp.makeConstraints { (make) in

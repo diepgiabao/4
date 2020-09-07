@@ -454,13 +454,13 @@
 				TargetAttributes = {
 					41A567EE1E40CB3B00470017 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Z67LVNYQSE;
+						DevelopmentTeam = QKT2GDLVYZ;
 						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 					};
 					41A568021E40CB3B00470017 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Z67LVNYQSE;
+						DevelopmentTeam = QKT2GDLVYZ;
 						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 41A567EE1E40CB3B00470017;

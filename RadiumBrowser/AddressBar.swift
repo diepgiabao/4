@@ -76,7 +76,7 @@ class AddressBar: UIView, UITextFieldDelegate {
             $0.backgroundColor = Colors.radiumUnselected
             $0.layer.borderColor = UIColor.lightGray.cgColor
             $0.layer.borderWidth = 0.5
-            $0.layer.cornerRadius = 5
+            $0.layer.cornerRadius = 10
             $0.inset = 8
             
             $0.autocorrectionType = .no

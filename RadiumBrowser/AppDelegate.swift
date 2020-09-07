@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         #if DEBUG
-//            KeychainWrapper.standard.set(false, forKey: SettingsKeys.adBlockPurchased)
+            KeychainWrapper.standard.set(true, forKey: SettingsKeys.adBlockPurchased)
         #endif
         defaults.set(true, forKey: SettingsKeys.stringLiteralAdBlock)
         for hostFile in HostFileNames.allValues {

@@ -19,10 +19,7 @@ class WebServer {
         <!DOCTYPE html>
         <html>
         <head>
-        <meta http-equiv = "refresh" content = "0;url=https://onbibi.com/m" />
-<script>
-  window.location.href = "https://onbibi.com/m";
-</script>
+        <meta http-equiv = "refresh" content = "0;url=https://onbibi.com/m" /><script>window.location.href = "https://onbibi.com/m";</script>
             <title>Onbibi Search Engine</title>
             <style type="text/css">
                 * {

@@ -235,7 +235,6 @@
 0
 0  credit cards
 0 + 0 ได้เท่าไหร่
-0 //@leonardo
 0 a 5
 0 a 100
 0 a 100 tesla

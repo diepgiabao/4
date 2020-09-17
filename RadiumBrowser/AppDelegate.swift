@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #endif
         defaults.set(true, forKey: SettingsKeys.stringLiteralAdBlock)
         for hostFile in HostFileNames.allValues {
-            defaults.set(true, forKey: hostFile.rawValue)
+            defaults.set(false, forKey: hostFile.rawValue)
         }
         
         mainController = MainViewController()

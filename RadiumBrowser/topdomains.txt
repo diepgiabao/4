@@ -145,6 +145,10 @@
 0 12 долларов в рублях
 0 12歲安全座椅
 0 13 0
+apple developer
+google developer
+distribution
+certificate
 0 13 долларов в рублях
 0 14 долларов в рублях
 0 15 3

@@ -16,8 +16,9 @@ def all_pods
     pod 'SnapKit'
     # Then API - initialization
     pod 'Then'
+    pod 'Realm', git: 'https://github.com/realm/realm-cocoa.git', branch: 'master', submodules: true
     # Realm database
-    pod 'RealmSwift'
+    pod 'RealmSwift', git: 'https://github.com/realm/realm-cocoa.git', branch: 'master', submodules: true
     # async images
     pod 'SDWebImage', '~> 3.8'
     # Color utilities

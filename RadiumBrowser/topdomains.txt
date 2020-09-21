@@ -402,7 +402,6 @@ real simple
 redbox
 redfin
 reference
-refinery29
 regnok
 rei
 research
@@ -413,9 +412,6 @@ rotoworld
 rotten tomatoes
 sales force
 salon
-samsclub
-sanders
-sbnation
 school
 schwab
 science
@@ -626,7 +622,6 @@ independent variable
 launchpad
 labcorp
 lovecraft country
-lilly pulitzer
 monday night football
 mathway
 metro pcs
@@ -742,13 +737,10 @@ youtube tv
 4 wheeler
 4 bedroom house for rent
 4 seasons hotel
-5 below
 6 tablespoons to cups
-6 figures
 711 near me
 7 continents
 8 weeks pregnant
-937 area code
 best and less
 coronavirus victoria
 chemist warehouse
@@ -785,13 +777,10 @@ mygov
 melbourne weather
 mathletics
 menulog
-nrl
 nab
 officeworks
-optus
 oodie
-powerball
-powerball results
+optus
 priceline
 perth weather
 real estate
@@ -803,14 +792,8 @@ smh
 supercheap
 target
 the age
-telstra
 tv guide
 usd to aud
-umart
-victoria covid
-victoria covid cases
-vicroads
-victoria coronavirus cases
 energy drink
 v line
 weather sydney
@@ -860,4 +843,4 @@ visa
 6 ounces to grams
 6 pounds in kg
 80s fashion
-9msn
+90s

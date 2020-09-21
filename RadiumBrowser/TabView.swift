@@ -32,10 +32,10 @@ class TabView: UIView, UIGestureRecognizerDelegate {
 	@objc init(parentView: UIView) {
         super.init(frame: .zero)
         
-        self.backgroundColor = Colors.radiumGray
+        self.backgroundColor = .white
 		
 		let closeBtn = UIButton().then { [unowned self] in
-			$0.setImage(UIImage.imageFrom(systemItem: .stop)?.makeThumbnailOfSize(size: CGSize(width: 15, height: 15)), for: .normal)
+			$0.setImage(UIImage.imageFrom(systemItem: .stop)?.makeThumbnailOfSize(size: CGSize(width: 20, height: 20)), for: .normal)
 			$0.addTarget(self, action: #selector(self.close(sender:)), for: .touchUpInside)
 			
 			self.addSubview($0)

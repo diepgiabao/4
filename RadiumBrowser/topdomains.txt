@@ -3,9 +3,7 @@
 onbibi.com/m
 onbibi news
 onbibi.com/news
-onbibi play
 onbibi games
-onbibi.com/games
 hot news
 soccer
 spaceship
@@ -128,12 +126,12 @@ cleaner
 climate change
 clip
 cnbc
+onbibi.com/games
 cnet
 college
 tiger
 comcast
 comenity
-conor mcgregor
 consumer reports
 coupons
 cox

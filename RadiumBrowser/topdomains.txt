@@ -18,6 +18,7 @@ english
 tieng viet
 australia
 kangaroo
+ram
 tieng anh
 spanish
 french
@@ -600,7 +601,6 @@ z archive
 2048
 360 app
 3d games
-3 player games
 4k wallpapers
 4 player games
 5 miles
@@ -641,10 +641,6 @@ n number lookup
 office depot
 oracle
 orlando weather
-orange county property appraiser
-o town
-publix
-publix near me
 pizza near me
 quest
 quest diagnostics near me
@@ -663,10 +659,6 @@ venus
 volcano bay
 vportal
 weather radar
-xfinity internet
-xcel energy
-zaxbys
-zillow fl
 051 subs
 10 commandments
 1 bedroom for rent near me
@@ -743,7 +735,6 @@ nba playoffs
 ohio
 ohio unemployment
 ohio bmv
-ohio edison
 olive garden
 o positive blood
 petsmart
@@ -759,8 +750,6 @@ unemployment ma
 ulta
 verizon
 vrbo
-verizon store
-verizon login
 walgreens
 walmart near me
 wap
@@ -770,42 +759,22 @@ youtube tv
 000 new cases
 0 degrees
 0 interest credit cards
-0 apr
-0 apr credit cards
-0 squared
-0 apr car deals
-0 in spanish
 1800 flowers
 14th amendment
 13th amendment
-1800 contacts
 1 bedroom apartments
 1 meter to feet
 1 cup to oz
 1 hour timer
 1 gallon to oz
 1 liter to oz
-1 800 flowers
-2nd stimulus
-24 hour fitness
-2nd stimulus check
-270 to win
-2k21
-2 corinthians
-2 bedroom apartments okc
-2 corinthians 5
 311
-300 unemployment ny
 3rd amendment
 3 eyed fish
 3 mile bridge
 3 margaritas
-3 margaritas richland
-3 rivers family medicine
 3 eyed fish menu
-4 seasons baltimore
 4 wheeler
-4 horsemen
 4 bedroom house for rent
 4 seasons hotel
 5 below
@@ -813,8 +782,6 @@ youtube tv
 530 area code
 5th amendment
 5 below near me
-5 guys menu
-600 unemployment
 6 flags over texas
 6 word memoirs
 6 stones
@@ -830,45 +797,29 @@ youtube tv
 80 thoreau
 844 area code
 8 wonders of kansas
-8 below ice cream
-8 below derby ks
 8 weeks pregnant
 937 area code
-big w
-bws
-bcf
 best and less
-coles
 coronavirus victoria
 chemist warehouse
 commonwealth bank
 carsales
 covid cases victoria
 c chord
-c diff
-c and m
 c major scale
-dan murphys
-david jones
-dhhs
 daily mail
+dhhs
 domain
 d major
 d chord
 d major scale
 d minor
 epl
-ebay australia
-eb games ps5
 elders weather
 fantastic furniture
-foxtel
 face masks
 freedom
 f major
-gumtree
-good guys
-g flip
 hungry jacks
 herald sun
 hello fresh
@@ -877,26 +828,15 @@ iconic
 jetstar
 jaycar
 jobkeeper
-kmart
-kogan
-kayo
-kathmandu
-kahoot it
-lotterywest
-liquorland
 louis vuitton
-lorna jane
 lotto results
 linkt
 mygov
 melbourne weather
-myer
 mathletics
-mwave
 menulog
 nrl
 nab
-nrl ladder
 officeworks
 optus
 oodie
@@ -904,11 +844,6 @@ powerball
 powerball results
 priceline
 perth weather
-qld border pass
-queensland border
-qld covid
-qld covid cases
-qsuper
 real estate
 reddit
 sydney weather
@@ -917,7 +852,6 @@ spotlight
 stan
 smh
 supercheap
-the lott
 target
 the age
 telstra
@@ -930,12 +864,9 @@ vicroads
 victoria coronavirus cases
 energy drink
 v line
-woolworths
-westpac
 weather sydney
-woolworths online
+tesla
 weather melbourne
-woolworths ooshies
 white pages
 02 area code
 08 area code
@@ -956,7 +887,6 @@ white pages
 1 form
 1 cup butter in grams
 2gb
-28 degrees
 2 pounds in kg
 2 inches in cm
 2 seater sofa
@@ -992,15 +922,10 @@ white pages
 6 times tables
 7news
 7news live
-7 plus connect
-8 ounces to grams
 80 series landcruiser
 80s fashion
 86400
-8 times tables
-8 ounces to ml
 9 news
-99 bikes
 9now
 9msn
 9 now

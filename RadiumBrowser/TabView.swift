@@ -66,10 +66,10 @@ class TabView: UIView, UIGestureRecognizerDelegate {
 			
 			self.addSubview($0)
 			$0.snp.makeConstraints { (make) in
-				make.left.equalTo(self.tabImageView!.snp.right).offset(4)
-				make.top.equalTo(self).offset(6)
-				make.bottom.equalTo(self).offset(-6)
-				make.right.equalTo(closeBtn.snp.left).offset(-4)
+				make.left.equalTo(self.tabImageView!.snp.right).offset(2)
+				make.top.equalTo(self).offset(4)
+				make.bottom.equalTo(self).offset(-4)
+				make.right.equalTo(closeBtn.snp.left).offset(-2)
 			}
 		}
 		

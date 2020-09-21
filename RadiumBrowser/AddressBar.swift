@@ -23,7 +23,7 @@ class AddressBar: UIView, UITextFieldDelegate {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.backgroundColor = Colors.radiumGray
+        self.backgroundColor = .white
         self.layer.borderColor = UIColor.lightGray.cgColor
         self.layer.borderWidth = 0.5
 		

@@ -1,6 +1,4 @@
-# RADIUM #
-
-Get it on the [App Store](https://itunes.apple.com/us/app/radium-web-browser/id1274491203?mt=8)!
+#Onbibi browser got bug, we use RADIUM browser open-source #
 
 ### What is this repository for? ###
 
